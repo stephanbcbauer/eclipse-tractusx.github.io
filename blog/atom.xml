@@ -2,11 +2,24 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/blog</id>
     <title>Eclipse Tractus-X Blog</title>
-    <updated>2023-10-04T11:00:00.000Z</updated>
+    <updated>2023-11-22T09:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://stephanbcbauer.github.io/eclipse-tractusx.github.io/blog"/>
     <subtitle>Eclipse Tractus-X Blog</subtitle>
     <icon>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/img/logo_tractus-x-min.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Launch of Our New Tutorial Section & First E2E Adopter Journey Tutorial]]></title>
+        <id>release-tutorials</id>
+        <link href="https://stephanbcbauer.github.io/eclipse-tractusx.github.io/blog/release-tutorials"/>
+        <updated>2023-11-22T09:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Eclipse Tractus-X tutorials - Enhancing learning and development within our community]]></summary>
+        <content type="html"><![CDATA[<p><img loading="lazy" alt="eclipse tractus x logo" src="/eclipse-tractusx.github.io/assets/images/Eclipse-TractusX-CommunityDays_Event2-751cfa514180f41744763b5ff3a4d58f.png" width="1880" height="940" class="img_ev3q"></p><p>The Tractus-X open source community is pleased to announce the introduction of a new tutorial section, including our inaugural End-to-End (E2E) Adopter Journey Tutorial.</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="overview-of-the-new-tutorial-section">Overview of the New Tutorial Section<a class="hash-link" href="#overview-of-the-new-tutorial-section" title="Direct link to heading">​</a></h2><p>This new section aims to provide structured and detailed educational content for our community members. The initiative reflects our commitment to supporting the continuous learning and development of our users and contributors.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="details-of-the-first-e2e-adopter-journey-tutorial">Details of the First E2E Adopter Journey Tutorial<a class="hash-link" href="#details-of-the-first-e2e-adopter-journey-tutorial" title="Direct link to heading">​</a></h3><ul><li><strong>Objective:</strong> The tutorial is designed to familiarize users with key aspects of the Tractus-X, including reference implementations of core and enablement services.</li><li><strong>Features:</strong> It includes a practical component where users can set up and interact with a locally deployed dataspace.</li><li><strong>Target Audience:</strong> The tutorial caters to both new users seeking an introduction to Tractus-X and existing members looking to deepen their understanding.</li></ul><h3 class="anchor anchorWithStickyNavbar_LWe7" id="feedback-and-discussion">Feedback and Discussion<a class="hash-link" href="#feedback-and-discussion" title="Direct link to heading">​</a></h3><p>We encourage users to provide feedback after completing the tutorial. Constructive comments and suggestions can be submitted via our <a href="https://github.com/eclipse-tractusx/eclipse-tractusx.github.io/discussions" target="_blank" rel="noopener noreferrer">discussions page</a>. This feedback is essential for us to improve and tailor future educational content to the needs of our community.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="accessing-the-tutorial">Accessing the Tutorial<a class="hash-link" href="#accessing-the-tutorial" title="Direct link to heading">​</a></h3><p>The E2E Adopter Journey Tutorial is now available and can be accessed through the <a href="https://eclipse-tractusx.github.io/docs/tutorials" target="_blank" rel="noopener noreferrer">Tractus-X tutorial section</a>. We invite our community members to engage with this new resource and enhance their understanding of the Tractus-X ecosystem.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="future-developments">Future Developments<a class="hash-link" href="#future-developments" title="Direct link to heading">​</a></h3><p>The launch of this tutorial marks the beginning of a series of educational resources we plan to release. Stay informed about future updates and additions to our tutorial section. Or even better, provide your own ideas and contributions.</p><p>For further information and to access the tutorial, please visit the <a href="https://eclipse-tractusx.github.io/docs/tutorials" target="_blank" rel="noopener noreferrer">Tractus-X tutorial section</a>.</p>]]></content>
+        <author>
+            <name>Stephan Bauer</name>
+            <email>stephan.bauer@catena-x.net</email>
+            <uri>https://github.com/stephanbcbauer</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Open Source Planning for Tractus-X]]></title>
         <id>open-planning-days</id>
