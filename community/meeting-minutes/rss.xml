@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Eclipse Tractus-X Blog</title>
-        <link>https://eclipse-tractusx.github.io/community/meeting-minutes</link>
+        <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes</link>
         <description>Eclipse Tractus-X Blog</description>
         <lastBuildDate>Fri, 03 May 2024 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,7 +10,7 @@
         <language>en</language>
         <item>
             <title><![CDATA[Community Office Hour 2024-05-03]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-05-03</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-05-03</link>
             <guid>community-office-hour-2024-05-03</guid>
             <pubDate>Fri, 03 May 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Office Hour meeting minutes]]></description>
@@ -21,7 +21,7 @@ Some Teams already documented on GitHub.</li></ul></li></ul>]]></content:encoded
         </item>
         <item>
             <title><![CDATA[Community Office Hour 2024-04-26]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-04-26</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-04-26</link>
             <guid>community-office-hour-2024-04-26</guid>
             <pubDate>Fri, 26 Apr 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Office Hour meeting minutes]]></description>
@@ -31,7 +31,7 @@ Some Teams already documented on GitHub.</li></ul></li></ul>]]></content:encoded
         </item>
         <item>
             <title><![CDATA[Community Office Hour 2024-04-19]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-04-19</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-04-19</link>
             <guid>community-office-hour-2024-04-19</guid>
             <pubDate>Fri, 19 Apr 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Office Hour meeting minutes]]></description>
@@ -46,7 +46,7 @@ being investigated and an update will be provided soon.</li></ul>]]></content:en
         </item>
         <item>
             <title><![CDATA[Commiter Meeting 12.04.2024]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/committer-meeting-12-04-2024</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/committer-meeting-12-04-2024</link>
             <guid>committer-meeting-12-04-2024</guid>
             <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Committer meeting - meeting minutes]]></description>
@@ -58,7 +58,7 @@ being investigated and an update will be provided soon.</li></ul>]]></content:en
         </item>
         <item>
             <title><![CDATA[Community Office Hour 2024-04-12]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-04-12</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-04-12</link>
             <guid>community-office-hour-2024-04-12</guid>
             <pubDate>Fri, 12 Apr 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Office Hour meeting minutes]]></description>
@@ -68,7 +68,7 @@ being investigated and an update will be provided soon.</li></ul>]]></content:en
         </item>
         <item>
             <title><![CDATA[Security Office Hour 2024-04-11]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/security-office-hour-2024-04-11</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/security-office-hour-2024-04-11</link>
             <guid>security-office-hour-2024-04-11</guid>
             <pubDate>Thu, 11 Apr 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Security Office Hour meeting minutes]]></description>
@@ -78,7 +78,7 @@ being investigated and an update will be provided soon.</li></ul>]]></content:en
         </item>
         <item>
             <title><![CDATA[Community Office Hour 2024-04-05]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-04-05</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-04-05</link>
             <guid>community-office-hour-2024-04-05</guid>
             <pubDate>Fri, 05 Apr 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Office Hour meeting minutes]]></description>
@@ -93,7 +93,7 @@ while</li><li>If this is an issue for anyone, please push that topic again</li><
         </item>
         <item>
             <title><![CDATA[Security Office Hour 2024-03-28]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/security-office-hour-2024-03-28</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/security-office-hour-2024-03-28</link>
             <guid>security-office-hour-2024-03-28</guid>
             <pubDate>Thu, 28 Mar 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Security Office Hour meeting minutes]]></description>
@@ -103,7 +103,7 @@ while</li><li>If this is an issue for anyone, please push that topic again</li><
         </item>
         <item>
             <title><![CDATA[Community Office Hour 2024-03-22]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-03-22</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-03-22</link>
             <guid>community-office-hour-2024-03-22</guid>
             <pubDate>Fri, 22 Mar 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Office Hour meeting minutes]]></description>
@@ -113,7 +113,7 @@ while</li><li>If this is an issue for anyone, please push that topic again</li><
         </item>
         <item>
             <title><![CDATA[Community Office Hour 2024-03-15]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-03-15</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-03-15</link>
             <guid>community-office-hour-2024-03-15</guid>
             <pubDate>Fri, 15 Mar 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Office Hour meeting minutes]]></description>
@@ -123,7 +123,7 @@ while</li><li>If this is an issue for anyone, please push that topic again</li><
         </item>
         <item>
             <title><![CDATA[Security Office Hour 2024-03-14]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/security-office-hour-2024-03-14</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/security-office-hour-2024-03-14</link>
             <guid>security-office-hour-2024-03-14</guid>
             <pubDate>Thu, 14 Mar 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Security Office Hour meeting minutes]]></description>
@@ -133,7 +133,7 @@ while</li><li>If this is an issue for anyone, please push that topic again</li><
         </item>
         <item>
             <title><![CDATA[Community Office Hour 2024-03-08]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-03-08</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-03-08</link>
             <guid>community-office-hour-2024-03-08</guid>
             <pubDate>Fri, 08 Mar 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Office Hour meeting minutes]]></description>
@@ -156,7 +156,7 @@ A TRG could include information on where these guide should be located and in wh
         </item>
         <item>
             <title><![CDATA[Community Office Hour 2024-03-01]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-03-01</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-03-01</link>
             <guid>community-office-hour-2024-03-01</guid>
             <pubDate>Fri, 01 Mar 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Tractus-X Office Hour meeting minutes]]></description>
@@ -166,7 +166,7 @@ A TRG could include information on where these guide should be located and in wh
         </item>
         <item>
             <title><![CDATA[Security Office Hour 2024-02-29]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/security-office-hour-2024-02-29</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/security-office-hour-2024-02-29</link>
             <guid>security-office-hour-2024-02-29</guid>
             <pubDate>Thu, 29 Feb 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Security Office Hour meeting minutes]]></description>
@@ -176,7 +176,7 @@ A TRG could include information on where these guide should be located and in wh
         </item>
         <item>
             <title><![CDATA[Community Office Hour 2024-02-23]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-02-23</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-02-23</link>
             <guid>community-office-hour-2024-02-23</guid>
             <pubDate>Fri, 23 Feb 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Office Hour meeting minutes]]></description>
@@ -186,7 +186,7 @@ A TRG could include information on where these guide should be located and in wh
         </item>
         <item>
             <title><![CDATA[Community Office Hour 2024-02-16]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-02-16</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-02-16</link>
             <guid>community-office-hour-2024-02-16</guid>
             <pubDate>Fri, 16 Feb 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Office Hour meeting minutes]]></description>
@@ -196,7 +196,7 @@ A TRG could include information on where these guide should be located and in wh
         </item>
         <item>
             <title><![CDATA[Community Office Hour 2024-02-09]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-02-09</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-02-09</link>
             <guid>community-office-hour-2024-02-09</guid>
             <pubDate>Fri, 09 Feb 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[office hour meeting minutes]]></description>
@@ -206,7 +206,7 @@ A TRG could include information on where these guide should be located and in wh
         </item>
         <item>
             <title><![CDATA[Community Office Hour 2024-02-02]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-02-02</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-02-02</link>
             <guid>community-office-hour-2024-02-02</guid>
             <pubDate>Fri, 02 Feb 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[office hour meeting minutes]]></description>
@@ -216,7 +216,7 @@ A TRG could include information on where these guide should be located and in wh
         </item>
         <item>
             <title><![CDATA[Community Office hour 2024-01-26]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-01-26</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-01-26</link>
             <guid>community-office-hour-2024-01-26</guid>
             <pubDate>Fri, 26 Jan 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[office hour meeting minutes]]></description>
@@ -234,7 +234,7 @@ one versioning strategy.</li><li>An alternative for MS Teams should be found as 
         </item>
         <item>
             <title><![CDATA[Community Office hour 2024-01-19]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-01-19</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/community-office-hour-2024-01-19</link>
             <guid>community-office-hour-2024-01-19</guid>
             <pubDate>Fri, 19 Jan 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[office hour meeting minutes]]></description>
@@ -244,7 +244,7 @@ one versioning strategy.</li><li>An alternative for MS Teams should be found as 
         </item>
         <item>
             <title><![CDATA[New Open Meeting blog]]></title>
-            <link>https://eclipse-tractusx.github.io/community/meeting-minutes/new-open-meeting-blog</link>
+            <link>https://stephanbcbauer.github.io/eclipse-tractusx.github.io/community/meeting-minutes/new-open-meeting-blog</link>
             <guid>new-open-meeting-blog</guid>
             <pubDate>Wed, 06 Dec 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[New home for open meeting minutes]]></description>
