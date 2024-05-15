@@ -11,14 +11,14 @@ once and are accessible by all participants.
 
 :::warning
 
-This chapter is not yet updated and refers to an older implemenation of the tutorial. Please used the README for the Tractus-X umbrella charts following the link:  
-https://github.com/eclipse-tractusx/tractus-x-umbrella/blob/main/charts/umbrella/README.md 
+This chapter is not yet updated and refers to an older implemenation of the tutorial. Please used the README for the Tractus-X umbrella charts following the link:
+<https://github.com/eclipse-tractusx/tractus-x-umbrella/blob/main/charts/umbrella/README.md>
 
 :::
 
 :::note
 
-### Special Hint for the Second Tractus-X Community Days: 
+### Special Hint for the Second Tractus-X Community Days
 
 If you are using the user accounts on the VMs provided by ARENA2036, please be aware of that you are working in a multi-user environment.
 
@@ -27,7 +27,6 @@ If you are using the user accounts on the VMs provided by ARENA2036, please be a
 - Use specific names for your cluster profile and namespaces for helm​
 
   - Proposed name for the cluster profile: “minikube-$USER”​
-
   - Proposed name for the umbrella namespace: “umbrella-$USER)" ​
 
 - Ensure you are using the option **-p**, everytime you calling minikube ​
@@ -95,7 +94,7 @@ kind create cluster -n mxd --config kind.config.yaml
 ```
 
 ```shell
-# 
+#
 # Now we activate ingress for the later port forwarding ?
 # the next step is specific to KinD and will be different for other Kubernetes runtimes!
 kubectl apply -f  \
@@ -116,7 +115,7 @@ terraform init
 
 ```shell
 terraform apply
-# type "yes" and press enter when prompted to do so 
+# type "yes" and press enter when prompted to do so
 ```
 
 Notice that the `kubectl apply` command deploys a Kubernetes Ingress Controller to the cluster and is required to reach
