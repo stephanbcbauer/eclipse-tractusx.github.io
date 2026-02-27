@@ -40,6 +40,8 @@ exclude = [
 ]
 
 # Exclude source files matching these patterns (e.g. the 404 page itself)
+# For docs-kits, only check the `next` folder; skip all versioned releases (e.g. 25.09, 25.12)
 exclude_path = [
   "build/404.html",
+  "build/docs-kits/[0-9]*",
 ]
