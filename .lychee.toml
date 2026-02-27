@@ -17,10 +17,6 @@ max_retries = 3
 # Do not check fragment anchors (e.g. #section-id) – avoids InvalidBaseJoin errors
 include_fragments = false
 
-# Skip non-2xx responses that result from redirects that lychee follows
-# (allows temporary/permanent redirects to succeed)
-# follow_all_redirects = true
-
 # Exclude patterns – these URLs are skipped entirely
 exclude = [
   # Skip mailto: links
@@ -40,11 +36,4 @@ exclude = [
   "^https?://(www\\.)?x\\.com",
   "^https?://(www\\.)?facebook\\.com",
   "^https?://(www\\.)?instagram\\.com",
-]
-
-# Exclude source files matching these patterns (e.g. the 404 page itself)
-# For docs-kits, only check the `next` folder; skip all versioned releases (e.g. 25.09, 25.12)
-exclude_path = [
-  "build/404.html",
-  "build/docs-kits/[0-9]*/**",
 ]

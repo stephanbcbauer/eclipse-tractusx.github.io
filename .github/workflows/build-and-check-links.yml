@@ -44,10 +44,15 @@ jobs:
       - name: Build website
         run: npm run build
 
+      - name: Collect HTML files to check
+        run: |
+          find build -name "*.html" \
+            ! -path "build/docs-kits/[0-9][0-9].[0-9][0-9]/*" \
+            ! -name "404.html" \
+            > /tmp/files-to-check.txt
+
       - name: Check links
         uses: lycheeverse/lychee-action@v2.4.1
         with:
-          args: >
-            --config .lychee.toml
-            "build/**/*.html"
+          args: --config .lychee.toml @/tmp/files-to-check.txt
           fail: true
