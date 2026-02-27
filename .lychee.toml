@@ -1,0 +1,45 @@
+# Lychee link checker configuration
+# See https://lychee.cli.rs/usage/config/ for all options
+
+# Accepted HTTP status codes (treat 200-299 as success; also accept 429 Too Many Requests
+# because rate-limiting is a common false positive for external links)
+accept = ["200..=299", "429"]
+
+# Maximum number of concurrent link checks
+max_concurrency = 8
+
+# Timeout per request in seconds
+timeout = 20
+
+# Number of retries for failed requests
+max_retries = 3
+
+# Skip non-2xx responses that result from redirects that lychee follows
+# (allows temporary/permanent redirects to succeed)
+# follow_all_redirects = true
+
+# Exclude patterns – these URLs are skipped entirely
+exclude = [
+  # Skip mailto: links
+  "^mailto:",
+  # Skip tel: links
+  "^tel:",
+  # Skip javascript: pseudo-links
+  "^javascript:",
+  # Skip bare fragment-only anchors
+  "^#",
+  # Skip localhost / loopback
+  "^https?://localhost",
+  "^https?://127\\.0\\.0\\.1",
+  # Skip common social / login pages that block automated requests
+  "^https?://(www\\.)?linkedin\\.com",
+  "^https?://(www\\.)?twitter\\.com",
+  "^https?://(www\\.)?x\\.com",
+  "^https?://(www\\.)?facebook\\.com",
+  "^https?://(www\\.)?instagram\\.com",
+]
+
+# Exclude source files matching these patterns (e.g. the 404 page itself)
+exclude_path = [
+  "build/404.html",
+]
