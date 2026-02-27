@@ -58,4 +58,6 @@ jobs:
           find ./build -name "*.html" \
             ! -path "*/docs-kits/[0-9][0-9].[0-9][0-9]/*" \
             ! -name "404.html" \
-            -print0 | xargs -0 lychee --config .lychee.toml
+            -print0 | xargs -0 lychee --config .lychee.toml \
+              --format markdown \
+              --output "$GITHUB_STEP_SUMMARY"
