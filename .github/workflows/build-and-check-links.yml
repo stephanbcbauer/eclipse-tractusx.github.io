@@ -30,6 +30,8 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    env:
+      LYCHEE_VERSION: v0.18.1
     steps:
       - uses: actions/checkout@v3
 
@@ -50,9 +52,13 @@ jobs:
             ! -path "*/docs-kits/[0-9][0-9].[0-9][0-9]/*" \
             ! -name "404.html" \
             > /tmp/files-to-check.txt
+          echo "Files to check: $(wc -l < /tmp/files-to-check.txt)"
+
+      - name: Install lychee
+        run: |
+          curl -sSfL "https://github.com/lycheeverse/lychee/releases/download/lychee-${LYCHEE_VERSION}/lychee-x86_64-unknown-linux-gnu.tar.gz" \
+            | tar xz -C /tmp/ lychee
+          sudo mv /tmp/lychee /usr/local/bin/lychee
 
       - name: Check links
-        uses: lycheeverse/lychee-action@v2.4.1
-        with:
-          args: --config .lychee.toml @/tmp/files-to-check.txt
-          fail: true
+        run: lychee --config .lychee.toml "@/tmp/files-to-check.txt"
