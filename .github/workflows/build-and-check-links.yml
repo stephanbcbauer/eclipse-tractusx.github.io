@@ -46,8 +46,8 @@ jobs:
 
       - name: Collect HTML files to check
         run: |
-          find build -name "*.html" \
-            ! -path "build/docs-kits/[0-9][0-9].[0-9][0-9]/*" \
+          find "$GITHUB_WORKSPACE/build" -name "*.html" \
+            ! -path "*/docs-kits/[0-9][0-9].[0-9][0-9]/*" \
             ! -name "404.html" \
             > /tmp/files-to-check.txt
 
