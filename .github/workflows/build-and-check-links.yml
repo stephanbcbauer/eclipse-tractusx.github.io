@@ -47,9 +47,9 @@ jobs:
         run: npm run build
 
       - name: Collect HTML files to check
+        working-directory: ${{ github.workspace }}
         run: |
-          cd "$GITHUB_WORKSPACE"
-          find build -name "*.html" \
+          find ./build -name "*.html" \
             ! -path "*/docs-kits/[0-9][0-9].[0-9][0-9]/*" \
             ! -name "404.html" \
             > /tmp/files-to-check.txt
