@@ -14,6 +14,9 @@ timeout = 20
 # Number of retries for failed requests
 max_retries = 3
 
+# Do not check fragment anchors (e.g. #section-id) – avoids InvalidBaseJoin errors
+include_fragments = false
+
 # Skip non-2xx responses that result from redirects that lychee follows
 # (allows temporary/permanent redirects to succeed)
 # follow_all_redirects = true
