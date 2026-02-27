@@ -48,7 +48,8 @@ jobs:
 
       - name: Collect HTML files to check
         run: |
-          find "$GITHUB_WORKSPACE/build" -name "*.html" \
+          cd "$GITHUB_WORKSPACE"
+          find build -name "*.html" \
             ! -path "*/docs-kits/[0-9][0-9].[0-9][0-9]/*" \
             ! -name "404.html" \
             > /tmp/files-to-check.txt
@@ -61,4 +62,5 @@ jobs:
           sudo mv /tmp/lychee /usr/local/bin/lychee
 
       - name: Check links
+        working-directory: ${{ github.workspace }}
         run: lychee --config .lychee.toml "@/tmp/files-to-check.txt"
