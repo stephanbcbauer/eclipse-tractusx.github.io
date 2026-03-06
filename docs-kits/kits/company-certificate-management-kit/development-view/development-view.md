@@ -17,384 +17,192 @@ Software Developers, Solution Architects, Technical Leads, API Developers, Integ
 
 ### More Guides
 
-[LINK TO THE OTHER FILES IN THIS VIEW IN CASE THERE ARE MORE]
-
-- [Architecture Overview](architecture.md)
-
-### Core Components
-
-#### Component 1: [Component Name]
-
-**Purpose**: [Component description]
-
-**Technology Stack**: [Programming language, framework, key dependencies]
-
-**Interfaces**: [Input, output, protocols]
-
-#### Component 2: [Component Name]
-
-[Same structure as Component 1]
+- [Architecture & CCMAPI Guide](architecture.md)
 
 ---
 
-## Sequence Diagrams
+## Functional Requirements
 
-### Authentication Flow
+### Core Functionalities
 
-```mermaid
-sequenceDiagram
-    participant Client
-    participant APIGateway
-    participant AuthService
-    participant CoreService
+#### Certificate Lifecycle Management
 
-    Client->>APIGateway: Request with credentials
-    APIGateway->>AuthService: Validate credentials
-    AuthService-->>APIGateway: Auth token
-    APIGateway-->>Client: Token response
-    Client->>APIGateway: API Request + Token
-    APIGateway->>CoreService: Forward request
-    CoreService-->>APIGateway: Response
-    APIGateway-->>Client: Final response
-```
+- Creation, update, renewal, and expiration tracking of certificates.
+- Upload and storage of digital certificate documents.
+- Association of certificates with specific business partners and company records.
 
-[Brief flow description]
+#### Validation and Approval Workflows
 
-### Data Exchange Flow
+- Automated and manual validation of certificate authenticity.
+- Multi-step approval processes involving different roles (e.g., business partner manager, compliance officer).
+- Notifications and escalation for pending approvals or expiring certificates.
 
-```mermaid
-sequenceDiagram
-    participant Provider
-    participant Connector
-    participant Consumer
-    participant Storage
+#### Integration with Master Data
 
-    Provider->>Connector: Offer data asset
-    Connector->>Connector: Register asset
-    Consumer->>Connector: Query available assets
-    Connector-->>Consumer: Asset catalog
-    Consumer->>Connector: Request data transfer
-    Connector->>Provider: Initiate transfer
-    Provider-->>Storage: Push data
-    Storage-->>Consumer: Deliver data
-```
+- Synchronization with business partner master data (e.g., SAP, ERP systems).
+- Automatic linking of certificates to business partner records.
 
-[Brief flow description]
+#### Audit and Reporting
 
----
+- Logging of all actions for audit trails.
+- Generation of compliance and status reports (e.g., list of expired/missing certificates).
+- Export of reports for external audits.
 
-## API Specifications
+#### User and Role Management
 
-### API Overview
+- Role-based access control (RBAC) for different user groups (e.g., admin, approver, viewer).
+- Delegation and substitution management for approvals.
 
-[List of main APIs with purpose]
+#### Notifications and Alerts
 
-### Base URL
+- Automated email or system notifications for certificate expiry, missing documents, or workflow tasks.
+- **API endpoints and resources**:
+  - Company Certificate Request
+  - Company Certificate Push
+  - Company Certificate Status (Accepted / Received / Rejected)
+  - Company Certificate Available
+  - Error Handling
+- Dashboard for monitoring certificate status and pending actions.
 
-```json
-https://api.example.com/v1
-```
+#### Document Management
 
-### Authentication
-
-[Authentication method: OAuth 2.0 | API Keys | JWT]
-
-```http
-Authorization: Bearer <your-access-token>
-```
-
-### API Endpoints
-
-#### GET /resources
-
-**Description**: Retrieve resources
-
-**Request**:
-
-```http
-GET /v1/resources HTTP/1.1
-Host: api.example.com
-Authorization: Bearer <token>
-```
-
-**Response** (200 OK):
-
-```json
-{
-  "resources": [
-    {
-      "id": "resource-1",
-      "name": "Example Resource",
-      "type": "data-asset"
-    }
-  ]
-}
-```
-
-#### POST /resources
-
-**Description**: Create a resource
-
-**Request**:
-
-```http
-POST /v1/resources HTTP/1.1
-Host: api.example.com
-Authorization: Bearer <token>
-Content-Type: application/json
-
-{
-  "name": "New Resource",
-  "type": "data-asset"
-}
-```
-
-**Response** (201 Created):
-
-```json
-{
-  "id": "resource-123",
-  "name": "New Resource",
-  "type": "data-asset"
-}
-```
-
-### OpenAPI Specification
-
-[Link to OpenAPI specification and Swagger UI]
+- Secure upload, storage, and retrieval of certificate files.
+- Versioning and history tracking for certificate documents.
 
 ---
 
-## Standards Compliance
+## Non-Functional Requirements
 
-| Standard | Version | Compliance | Description |
-|----------|---------|------------|-------------|
-| [Standard 1] | X.Y | Mandatory | [Description] |
-| [Standard 2] | X.Y | Optional | [Description] |
+### Quality Attributes
 
-### Standard Details
+#### Security
 
-#### [Standard Name]
+- Data encryption at rest and in transit.
+- Strict access controls to sensitive certificate data.
+- Compliance with relevant data protection regulations (e.g., GDPR).
 
-**Compliance Level**: [Mandatory | Optional | Recommended]
+#### Scalability
 
-**Implementation**: [Brief description]
+- Ability to handle a large number of business partners and certificates.
+- Support for future integration with additional systems or modules.
 
-**Reference**: [Link]
+#### Reliability & Availability
 
----
+- High system uptime to ensure business continuity.
+- Backup and disaster recovery mechanisms.
 
-## Logic & Schema
+#### Performance
 
-### Business Logic
+- Fast response times for certificate lookups and workflow actions.
+- Efficient batch processing for notifications and reporting.
 
-[Core business logic description]
+#### Usability
 
-#### Logic Flow: [Process Name]
+- Intuitive user interface for both business and technical users.
+- Multilingual support if required by the business context.
 
-**Input**: [Required data]
+#### Auditability
 
-**Processing Steps**: [Brief description of steps]
+- Comprehensive logging of all user actions and system events.
+- Tamper-proof audit trails for compliance verification.
 
-**Output**: [Produced data]
+#### Maintainability
 
-### Data Schema
+- Modular architecture to support easy updates and enhancements.
+- Clear documentation for system configuration and operation.
 
-#### Schema: [Schema Name]
+#### Integration
 
-**Purpose**: [Schema description]
-
-```json
-{
-  "$schema": "http://json-schema.org/draft-07/schema#",
-  "type": "object",
-  "properties": {
-    "id": {
-      "type": "string",
-      "description": "Unique identifier"
-    },
-    "name": {
-      "type": "string",
-      "description": "Resource name"
-    }
-  },
-  "required": ["id", "name"]
-}
-```
-
-**Example**:
-
-```json
-{
-  "id": "res-001",
-  "name": "Example Resource"
-}
-```
+- Standard APIs or connectors for integration with ERP, CRM, and document management systems.
+- Support for importing/exporting data in standard formats (e.g., CSV, XML).
 
 ---
 
-## Semantic Models
+## Terminology
 
-### Model: [Model Name]
+This section is non-normative. In this section the different parts of the data model are explained.
 
-**Version**: X.Y.Z
+### BPNL – Business Partner Number Legal Entity
 
-**Namespace**: `urn:samm:org.eclipse.tractusx.[domain]:[version]#`
+A Business Partner Number Legal Entity (BPNL) represents and uniquely identifies a Legal Entity, which is defined by its legal name (including Legal Form, if registered), legal Address and Tax Number. For further details on BPNLs please see standard CX-0010:2.0 Business Partner Number.
 
-**Description**: [Model description]
+For this standard and the data model the BPNL is the BPN id of the certified legal entity (on which the certificate is issued).
 
-**Key Properties**:
+**Attribute**: `businessPartnerNumber`
 
-| Property | Type | Required | Description |
-|----------|------|----------|-------------|
-| `property1` | string | Yes | [Description] |
-| `property2` | integer | No | [Description] |
+### Certificate Type
 
-**Example**:
+The attribute `CertificateType` refers to the type of the certificate the BPN is certified for. This data model is generic and currently supports, but is not limited to, the following list of certificate types. Additional certificate types will be validated in the future, and others may already be compatible with this generic model:
 
-```json
-{
-  "@context": {
-    "@vocab": "urn:samm:org.eclipse.tractusx.[domain]:[version]#"
-  },
-  "property1": "value1",
-  "property2": 42
-}
-```
+- **IATF 16949** (International Automotive Task Force) – A standard that defines the requirements for a quality management system in the automotive industry.
+- **ISO 14001** – A standard that outlines the requirements for an environmental management system to help organizations minimize their impact on the environment.
+- **ISO 9001** – A standard that sets out the requirements for a quality management system to help organizations consistently provide products and services that meet customer and regulatory requirements.
+- **ISO 45001, OHSAS 18001 or national certification** – Occupational health and safety management system standards that help companies identify and manage workplace hazards to prevent accidents and injuries.
+- **ISO/IEC 27001** – An information security management system standard that provides a framework for companies to manage and protect their sensitive information.
+- **ISO 50001 or national certification** – An energy management system standard that helps companies improve energy efficiency and reduce costs.
+- **ISO/IEC 17025** – A laboratory accreditation standard that ensures the accuracy and reliability of testing and calibration results.
+- **ISO 20000** – An IT service management system standard that helps companies deliver high-quality IT services to their customers.
+- **ISO 22301** – A business continuity management system standard that helps companies prepare for and respond to unexpected disruptions to their operations.
+- **AEO (Authorized Economic Operator), CTPAT, Security Declaration** – Internationally recognized certificates that confirm a company's compliance with customs regulations and supply chain security standards.
+- **VDA6.4** – A standard that defines the requirements for a quality management system in the automotive industry, with a focus on process auditing.
 
-**Reference**: [Link to SAMM specification]
+:::note
+The spelling of the certificate type may vary slightly on the user interface or within the data model.
+:::
 
----
+### Registration and Issuing
 
-## Test Cases
+The issuing authority is the authority that issues a certificate – e.g. TUEV Sued. The registration number is the unique identifier of the certificate at the certification authority / issuing body.
 
-### Test Strategy
+**Example**: ISO 9001 certificate is issued by TUEV Süd, which is the certification authority.
 
-- **Unit Tests**: Component-level testing
-- **Integration Tests**: API integration testing
-- **End-to-End Tests**: Complete workflow testing
+### Area of Application
 
-### Test Case: [Test Name]
+The attribute `areaOfApplication` refers to the area of applications for the given certification, i.e. additional details.
 
-**Objective**: [Test validation purpose]
+### Enclosed Sites / Addresses
 
-**Preconditions**: [Required setup]
+The attribute `enclosedSites` is closely linked to the Business Partner Number (BPN) and indicates additional sites, such as production or engineering sites, that are covered by the certificate. In other words, the certificate is valid not only for the primary BPN, but also for any associated sites (BPNS). This attribute is particularly useful for companies with multiple locations or business units, as it allows them to manage certificates more efficiently and ensures that all relevant sites are covered by the certificate.
 
-**Test Steps**: [Brief description]
+:::note
+If no BPNS is available, the use of the Business Partner Number Address (BPNA) is also allowed within this attribute.
+:::
 
-**Expected Outcome**: [Expected result]
+### Validity
 
----
+The attribute validity refers to the date from which the certificate is valid. If it is not defined, it is recommended to use the date of issue/signature of the document. In connection with the valid-from date, there is the valid-to date for a certificate – 31.12.9999 for no expiration date.
 
-## Sample Data
+### Trust Level
 
-### Sample Dataset: [Dataset Name]
+This data object defines the trust level of the certificate.
 
-**Purpose**: [Sample purpose]
+The certificates are provided in the business context by the company itself – they are showing their certificates to other companies. Not every certificate can be directly validated by the issuing authority. That is why there are different trust levels defined:
 
-**Format**: JSON
+| Trust Level | Description |
+|-------------|-------------|
+| **None** | No validation check at all, just uploaded / provided by the company. |
+| **Low** | Manual validation check done by human after upload. |
+| **Medium** | Certificate provided by trusted issuer and manually checked (as low). |
+| **High** | Automated cross check via some database (e.g. TÜV, IATF). |
+| **Trusted** | Directly provided by issuer (e.g. TÜV). |
 
-**Download**: [Link]
+### Validator
 
-**Example**:
+The validator is the one who can validate certificate information. In the best way it is the authority that is issuing the certificates but there can be other validators. This attribute has a relation to the trust level.
 
-```json
-{
-  "sampleData": [
-    {
-      "id": "sample-001",
-      "field1": "value1"
-    }
-  ]
-}
-```
+E.g. Business service providers that offer a validation service for company certificates.
 
----
+:::note
+The property `validatorBpn` expects the BPNL as the default. However, if deemed necessary, this property can be used as a free text field (string).
+:::
 
-## Developer Tutorials
+### Certificate Uploader
 
-### Quick Start
+The attribute `uploader` defines the company (uploader) who originally provided the given certificate (e.g. company A provided it to business application provider B, business application provider B is a trusted validator). This company is also identified by a BPN.
 
-**Prerequisites**: [List prerequisites]
+### Document ID
 
-**Steps**:
-
-1. Clone repository:
-
-```bash
-git clone https://github.com/eclipse-tractusx/[repository-name].git
-```
-
-1. Configure `application.properties`:
-
-```properties
-server.port=8080
-api.base-url=https://api.example.com
-```
-
-1. Build and run:
-
-```bash
-mvn clean install
-mvn spring-boot:run
-```
-
-1. Verify:
-
-```bash
-curl http://localhost:8080/health
-```
-
----
-
-## Integration Examples
-
-### Integration with [System Name]
-
-**Java Example**:
-
-```java
-public class KitIntegration {
-    private final KitClient client;
-
-    public KitIntegration(String apiUrl, String apiKey) {
-        this.client = new KitClient(apiUrl, apiKey);
-    }
-
-    public Resource getResource(String resourceId) {
-        return client.resources().get(resourceId);
-    }
-}
-```
-
-**Python Example**:
-
-```python
-from kit_sdk import KitClient
-
-client = KitClient(api_url="https://api.example.com", api_key="your-key")
-resource = client.resources.get("resource-id")
-```
-
----
-
-## Additional Resources
-
-### Reference Implementations
-
-- TBD
-
-### SDKs and Libraries
-
-| Language | SDK | Link |
-|----------|-----|------|
-| Java | [SDK Name] | [Link] |
-| Python | [SDK Name] | [Link] |
-
-### Developer Tools
-
-- [Postman Collection](https://github.com/eclipse-tractusx/eclipse-tractusx.github.io/tree/main/docs-kits/kit-template/resources/postman-collection.json)
-- [OpenAPI Generator](https://openapi-generator.tech/)
+The internal reference id to request a certificate document.
 
 ---
 
@@ -403,6 +211,6 @@ resource = client.resources.get("resource-id")
 This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
 
 - SPDX-License-Identifier: CC-BY-4.0
-- SPDX-FileCopyrightText: [YYYY] [YOUR_COMPANY]
-- SPDX-FileCopyrightText: [YYYY] Contributors to the Eclipse Foundation
+- SPDX-FileCopyrightText: 2025 Contributors to the Eclipse Foundation
 - Source URL: [https://github.com/eclipse-tractusx/eclipse-tractusx.github.io](https://github.com/eclipse-tractusx/eclipse-tractusx.github.io)
+
