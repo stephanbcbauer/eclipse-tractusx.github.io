@@ -13,7 +13,7 @@ import KitMetadataBadges from '@site/src/components/2.0/KitMetadataBadges';
 
 ## Vision & Mission
 
-### Vision
+### Vision umbenannt
 
 The AI Service KIT envisions a future where business processes are optimized through the collaboration of diversely specialized AI systems across various inter-company collaborations.
 For achieving this vision, an ecosystem is needed where AI systems can collaborate while trusting each other.
