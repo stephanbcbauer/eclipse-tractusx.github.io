@@ -353,6 +353,26 @@ export const meetings = [
     },
   },
   {
+    id: 'sixth-community-days-2026',
+    title: 'Sixth Eclipse Tractus-X Community Days 🏭',
+    category: MEETING_CATEGORIES.ONE_TIME,
+    description: 'Join us for the Sixth Eclipse Tractus-X Community Days at ARENA2036 in Stuttgart, Germany! Two full days of keynotes, workshops, hands-on challenges, and networking with the global Tractus-X open-source community. Connect with contributors from Manufacturing-X initiatives (Factory-X, Chem-X, Aerospace-X and more), participate in technical coding challenges, and help shape the future of open-source data spaces.',
+    contact: 'stephan.bauer@catena-x.net',
+    sessionLink: 'https://arena2036.de/reader/sixth-eclipse-tractus-x-community-days/',
+    additionalLinks: [
+      { title: 'News Blog & Registration', url: '/blog/community-days-05-2026' },
+      { title: 'ARENA2036 Event Page', url: 'https://arena2036.de/reader/sixth-eclipse-tractus-x-community-days/' },
+      { title: 'Tractus-X Community Matrix Chat', url: 'https://matrix.to/#/#tractusx-dev:matrix.eclipse.org' },
+      { title: 'Tractus-X Mailing List', url: 'https://accounts.eclipse.org/mailing-list/tractusx-dev' },
+    ],
+    recurrence: {
+      frequency: 'once',
+      startDate: '2026-05-01',
+      startTime: '09:00',
+      endTime: '17:00',
+    },
+  },
+  {
     id: 'first-international-hackathon',
     title: 'First International Eclipse Tractus-X Hackathon 🇪🇸',
     category: MEETING_CATEGORIES.ONE_TIME,
