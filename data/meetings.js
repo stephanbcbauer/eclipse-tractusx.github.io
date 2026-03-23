@@ -356,7 +356,7 @@ export const meetings = [
     id: 'sixth-community-days-2026',
     title: 'Sixth Eclipse Tractus-X Community Days 🏭',
     category: MEETING_CATEGORIES.ONE_TIME,
-    description: 'Join us for the Sixth Eclipse Tractus-X Community Days at ARENA2036 in Stuttgart, Germany! Two full days of keynotes, workshops, hands-on challenges, and networking with the global Tractus-X open-source community. Connect with contributors from Manufacturing-X initiatives (Factory-X, Chem-X, Aerospace-X and more), participate in technical coding challenges, and help shape the future of open-source data spaces.',
+    description: 'Join us for the Sixth Eclipse Tractus-X Community Days at ARENA2036 e.V. (Pfaffenwaldring 19, 70569 Stuttgart, Germany)! Two full days of keynotes, workshops, hands-on challenges, and networking with the global Tractus-X open-source community. Connect with contributors from Manufacturing-X initiatives (Factory-X, Chem-X, Aerospace-X and more), participate in technical coding challenges, and help shape the future of open-source data spaces.',
     contact: 'stephan.bauer@catena-x.net',
     sessionLink: 'https://arena2036.de/reader/sixth-eclipse-tractus-x-community-days/',
     additionalLinks: [
@@ -368,6 +368,7 @@ export const meetings = [
     recurrence: {
       frequency: 'once',
       startDate: '2026-07-02',
+      endDate: '2026-07-03',
       startTime: '09:00',
       endTime: '17:00',
     },

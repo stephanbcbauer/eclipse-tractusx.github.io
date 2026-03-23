@@ -106,9 +106,10 @@ export function generateCalendarEvents(meetings, startDate, endDate, timezone = 
     const { recurrence } = meeting;
     
     if (recurrence.frequency === 'once') {
-      // Single event
+      // Single event — endDate may differ from startDate for multi-day events
+      const endDateStr = recurrence.endDate || recurrence.startDate;
       const eventStart = parseTimeInTimezone(recurrence.startDate, recurrence.startTime, SOURCE_TIMEZONE);
-      const eventEnd = parseTimeInTimezone(recurrence.startDate, recurrence.endTime, SOURCE_TIMEZONE);
+      const eventEnd = parseTimeInTimezone(endDateStr, recurrence.endTime, SOURCE_TIMEZONE);
       
       if (isWithinInterval(eventStart, { start: startDate, end: endDate })) {
         events.push({
@@ -177,15 +178,22 @@ export function getScheduleDescription(meeting, timezone = SOURCE_TIMEZONE) {
   const { recurrence } = meeting;
   
   if (recurrence.frequency === 'once') {
+    const endDateStr = recurrence.endDate || recurrence.startDate;
     const eventDate = parse(recurrence.startDate, 'yyyy-MM-dd', new Date());
     const startTime = parseTimeInTimezone(recurrence.startDate, recurrence.startTime, SOURCE_TIMEZONE);
-    const endTime = parseTimeInTimezone(recurrence.startDate, recurrence.endTime, SOURCE_TIMEZONE);
+    const endTime = parseTimeInTimezone(endDateStr, recurrence.endTime, SOURCE_TIMEZONE);
     
-    const dateStr = formatInTimeZone(eventDate, timezone, 'EEEE, d. MMMM yyyy');
+    const startDateFormatted = formatInTimeZone(eventDate, timezone, 'EEEE, d. MMMM yyyy');
     const timeRange = formatTimeRange(startTime, endTime, timezone);
     const tzAbbr = getTimezoneAbbreviation(startTime, timezone);
+
+    if (recurrence.endDate && recurrence.endDate !== recurrence.startDate) {
+      const endEventDate = parse(recurrence.endDate, 'yyyy-MM-dd', new Date());
+      const endDateFormatted = formatInTimeZone(endEventDate, timezone, 'EEEE, d. MMMM yyyy');
+      return `${startDateFormatted} – ${endDateFormatted} from ${timeRange} ${tzAbbr}`;
+    }
     
-    return `${dateStr} from ${timeRange} ${tzAbbr}`;
+    return `${startDateFormatted} from ${timeRange} ${tzAbbr}`;
   }
 
   // Recurring events
