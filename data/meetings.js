@@ -360,14 +360,14 @@ export const meetings = [
     contact: 'stephan.bauer@catena-x.net',
     sessionLink: 'https://arena2036.de/reader/sixth-eclipse-tractus-x-community-days/',
     additionalLinks: [
-      { title: 'News Blog & Registration', url: '/blog/community-days-05-2026' },
+      { title: 'News Blog & Registration', url: '/blog/community-days-07-2026' },
       { title: 'ARENA2036 Event Page', url: 'https://arena2036.de/reader/sixth-eclipse-tractus-x-community-days/' },
       { title: 'Tractus-X Community Matrix Chat', url: 'https://matrix.to/#/#tractusx-dev:matrix.eclipse.org' },
       { title: 'Tractus-X Mailing List', url: 'https://accounts.eclipse.org/mailing-list/tractusx-dev' },
     ],
     recurrence: {
       frequency: 'once',
-      startDate: '2026-05-01',
+      startDate: '2026-07-02',
       startTime: '09:00',
       endTime: '17:00',
     },

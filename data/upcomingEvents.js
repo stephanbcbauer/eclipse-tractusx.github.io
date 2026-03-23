@@ -55,14 +55,14 @@ export const upcomingEvents = [
     image: '/img/events/hackathon-spain.jpeg'
   },
   {
-    id: 'community-days-05-2026',
+    id: 'community-days-07-2026',
     title: 'Sixth Eclipse Tractus-X Community Days',
-    date: '2026-05-01',
-    endDate: '2026-05-02',
-    location: 'Stuttgart, Germany',
-    description: 'Join us for the Sixth Eclipse Tractus-X Community Days at ARENA2036 in Stuttgart! Two days of collaboration, workshops, keynotes, and networking with the global Tractus-X community. Connect with contributors from Manufacturing-X initiatives, participate in hands-on challenges, and help shape the future of open-source data spaces.',
+    date: '2026-07-02',
+    endDate: '2026-07-03',
+    location: 'ARENA2036 e.V., Stuttgart, Germany',
+    description: 'Join us for the Sixth Eclipse Tractus-X Community Days at ARENA2036 e.V. (Pfaffenwaldring 19, 70569 Stuttgart)! Two days of collaboration, workshops, keynotes, and networking with the global Tractus-X community. Connect with contributors from Manufacturing-X initiatives, participate in hands-on challenges, and help shape the future of open-source data spaces.',
     registrationUrl: 'https://arena2036.de/reader/sixth-eclipse-tractus-x-community-days/',
-    blogSlug: 'community-days-05-2026',
+    blogSlug: 'community-days-07-2026',
     eventType: 'community-days',
     featured: true,
     image: '/img/tractus-x-community-days-26-05.png'
