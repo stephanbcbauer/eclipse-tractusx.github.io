@@ -22,7 +22,7 @@ Status updates discussed in meeting:
   contributors.
 - Security-team synchronization, secret-scanning efficiency, and sustainable funding for maintenance remain unresolved.
 - AI contribution requirements need further review against Eclipse guidance before deciding whether to extend an
-  existing TRG or create a separate one.
+  existing TRG or create a separate one
 
 ## Topics Discussed
 
